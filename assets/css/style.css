@@ -2,8 +2,13 @@
   text-shadow: 0 0 5px darcen #232323 14%, 0 0 20px darcen #232323 14%;
 }
 
+.header {
+  margin-bottom: 80px;
+}
+
 .navbar-inverse {
   background-color: darken #232323, 4%;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -18,19 +23,19 @@
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
-  border-radius: 4px;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   background-color: #165690;
 }
 
-.navbar-left > li {
-  margin: 5px 5px 5px 0;
+.navbar-header {
+  text-align: center;
 }
 
-.navbar-right > li {
-  margin: 5px 0 5px 5px;
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
 }
 
 html {
@@ -60,9 +65,6 @@ a {
   display: block;
   color: #df8a13;
   font-family: "PT Serif", serif;
-  font-size: 3.5rem;
-  letter-spacing: 0.33em;
-  margin-right: -15px;
 }
 
 .header-logo__description {
@@ -70,4 +72,44 @@ a {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+@media (min-width: 576px) {
+  .header-logo__title {
+    font-size: 3.5rem;
+    letter-spacing: 0.33em;
+    margin-right: -15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-inverse .navbar-nav > li > a {
+    border-radius: 4px;
+  }
+  .navbar-left > li {
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-right > li {
+    margin: 5px 0 5px 5px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  .navbar-inverse .navbar-nav > li > a {
+    text-align: center;
+  }
+  .navbar-left {
+    margin-bottom: 0;
+  }
+  .navbar-right {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .header-logo__title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-right: -7.5px;
+  }
 }

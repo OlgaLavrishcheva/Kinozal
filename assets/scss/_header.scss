@@ -1,5 +1,5 @@
 .header {
-
+  @extend %margin-bottom-lg;
 }
 
 .header-logo {
@@ -14,10 +14,18 @@
     display: block;
     color: $color-accent;
     font-family: $font-header;
-    font-size: 3.5rem;
-    letter-spacing: 0.33em;
-    margin-right: -$gap;
     @extend %text-shadow;
+
+    @include xs-min {
+      font-size: 3.5rem;
+      letter-spacing: 0.33em;
+      margin-right: -$gap;
+    }
+    @include xs {
+      font-size: 2.5rem;
+      letter-spacing: 0.2em;
+      margin-right: -($gap / 2);
+    }
   }
 
   &__description {

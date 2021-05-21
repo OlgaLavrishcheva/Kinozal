@@ -1,3 +1,7 @@
 %text-shadow {
   text-shadow: 0 0 5px darcen ($color-dark 14%), 0 0 20px darcen ($color-dark 14%);
 }
+
+%margin-bottom-lg {
+  margin-bottom: $gap * 5.333333333333;
+}
