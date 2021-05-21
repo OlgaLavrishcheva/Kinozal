@@ -1,9 +1,25 @@
-.navbar-inverse .navbar-nav> .active > a {
-  background-color: $color-primary-darc;
+.navbar-inverse {
+  background-color: darken ($color-dark, 4%);
 
-  &:hover,
-  &:focus {
-    background-color: $color-primary-light;
+  .navbar-nav {
+    > .active > a {
+      background-color: $color-primary-darc;
+
+      &:hover,
+      &:focus {
+        background-color: $color-primary-light;
+      }
+    }
+
+    > li > a{
+      transition: background-color 0.5s;
+      border-radius: 4px;
+
+      &:hover,
+      &:focus {
+        background-color: $color-primary;
+      }
+    }
   }
 }
 
@@ -13,18 +29,4 @@
 
 .navbar-right > li {
   margin: 5px 0 5px 5px;
-}
-
-.navbar-inverse .navbar-nav > li > a{
-  transition: background-color 0.5s;
-  border-radius: 4px;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  background-color: $color-primary;
-}
-
-.navbar-inverse {
-  background-color: darken ($color-dark, 4%);
 }
