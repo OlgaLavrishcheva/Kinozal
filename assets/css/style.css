@@ -113,6 +113,31 @@ a {
   width: 100%;
 }
 
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.user-login a {
+  padding: 14px 5px 11px !important;
+  color: #dddddd;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-login .active a {
+  color: #ffffff !important;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;

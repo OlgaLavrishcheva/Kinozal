@@ -14,3 +14,28 @@
     width: 100%;
   }
 }
+
+.user-login {
+  position: relative;
+
+  &__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap / 3 * 2;
+  }
+
+  a {
+    padding: 14px 5px 11px !important;
+    color: $color-gray;
+    border: none !important;
+    background-color: transparent !important;
+  }
+
+  .active a {
+    color: $color-light !important;
+  }
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
