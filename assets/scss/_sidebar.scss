@@ -92,3 +92,45 @@
   }
 }
 
+.top-films {
+  &__body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    background-color: transparent;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-right: 55px;
+    color: $color-primary !important;
+
+    &:first-child {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    &:last-child{
+      border-radius: 0;
+      border-bottom: none;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $color-accent;
+      background-color: $color-accent !important;
+      color: $color-light !important;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: $gap;
+  }
+}

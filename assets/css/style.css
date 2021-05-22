@@ -207,6 +207,48 @@ a:hover, a:focus {
   text-align: right;
 }
 
+.top-films__body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.top-films__item {
+  background-color: transparent;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-right: 55px;
+  color: #165690 !important;
+}
+
+.top-films__item:first-child {
+  border-radius: 0;
+  border-top: none;
+}
+
+.top-films__item:last-child {
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.top-films__item:hover, .top-films__item:focus {
+  border-color: #df8a13;
+  background-color: #df8a13 !important;
+  color: #ffffff !important;
+}
+
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
+
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
