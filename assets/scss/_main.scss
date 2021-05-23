@@ -1,3 +1,79 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .site-login {
+    margin-bottom: $gap *4;
+  }
+}
+
+.new-films,
+.top-week {
+  position: relative;
+  overflow: hidden;
+
+  &-row {
+    margin-left: -($gap / 2);
+    margin-right: - ($gap / 2);
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+
+    &__title {
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &__caption {
+      text-align: center;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+}
+
+.movie-news {
+  position: relative;
+  overflow: hidden;
+
+  &-item:hover,
+  &-item:focus{
+    .movie-news-item__title {
+    color: $color-accent;
+    }
+    .movie-news-item__thumbnail,
+    .movie-news-item__button{
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+  }
+
+  &-item__text {
+    text-align: justify;
+  }
+
+  &-item__button {
+    float: right;
+    margin-bottom: 30px;
+    transition: background-color 0.25s;
+  }
 }
