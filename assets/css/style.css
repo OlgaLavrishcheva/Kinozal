@@ -231,6 +231,10 @@ h2::after {
   transition: background-color 0.25s;
 }
 
+.thumbnail {
+  margin-bottom: 0;
+}
+
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }
@@ -372,6 +376,46 @@ h2::after {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 15px;
+}
+
+footer {
+  background-color: #232323;
+  padding: 45px 0 20px 0;
+}
+
+footer ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li a {
+  color: #737373;
+}
+
+footer li a:hover {
+  color: #ffffff;
+}
+
+footer li a:focus {
+  color: #737373;
+}
+
+h4 {
+  font: 400 "PT Sans", sans-serif;
+  color: #ffffff;
+}
+
+.footer-fifth {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-fifth a {
+  color: #ffffff;
 }
 
 @media (min-width: 576px) {

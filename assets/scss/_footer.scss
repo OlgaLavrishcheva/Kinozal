@@ -1,0 +1,37 @@
+footer {
+  background-color: $color-dark;
+  padding: 45px 0 20px 0;
+
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+    a {
+      color: darken(#ffffff, 55%);
+
+      &:hover {
+        color: $color-light;
+      }
+      &:focus {
+        color: darken(#ffffff, 55%);
+      }
+    }
+  }
+}
+
+h4 {
+  font: 400 $font-main;
+  color: $color-light;
+}
+
+.footer-fifth {
+  text-align: center;
+  margin-top: 20px;
+
+  a {
+  color: $color-light;
+  }
+}
