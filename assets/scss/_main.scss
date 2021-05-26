@@ -26,6 +26,19 @@
     padding-right: $gap / 2;
     margin-bottom: $gap;
 
+    &:hover {
+      a {
+        text-decoration: none;
+        color: $color-accent;
+      }
+
+      .new-films-item__thumbnail,
+      .top-week-item__thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+    }
+
     &__thumbnail {
       margin-bottom: 0;
     }
@@ -48,7 +61,6 @@
       width: 100%;
     }
   }
-
 }
 
 .movie-news {

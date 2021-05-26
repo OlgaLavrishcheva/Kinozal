@@ -20,6 +20,8 @@
 
   &__wrapper {
     margin-right: 15px;
+    white-space: nowrap;
+
     &:last-child {
       margin-right: 0;
     }

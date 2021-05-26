@@ -176,6 +176,20 @@ h2::after {
   margin-bottom: 15px;
 }
 
+.new-films-item:hover a,
+.top-week-item:hover a {
+  text-decoration: none;
+  color: #df8a13;
+}
+
+.new-films-item:hover .new-films-item__thumbnail,
+.new-films-item:hover .top-week-item__thumbnail,
+.top-week-item:hover .new-films-item__thumbnail,
+.top-week-item:hover .top-week-item__thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
 .new-films-item__thumbnail,
 .top-week-item__thumbnail {
   margin-bottom: 0;
@@ -262,6 +276,7 @@ h2::after {
 
 .films-info__wrapper {
   margin-right: 15px;
+  white-space: nowrap;
 }
 
 .films-info__wrapper:last-child {
