@@ -27,9 +27,8 @@
     margin-bottom: $gap;
 
     &:hover {
-      a {
-        text-decoration: none;
-        color: $color-accent;
+      h3 {
+        color: $color-light
       }
 
       .new-films-item__thumbnail,
