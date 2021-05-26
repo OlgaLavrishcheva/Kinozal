@@ -1,0 +1,59 @@
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.films-info {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &__wrapper {
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__badge {
+    margin: 0;
+    font-size: 0.8em;
+  }
+}
+
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
+.films-description,
+.films-reviews,
+.films-comment {
+  position: relative;
+  overflow: hidden;
+}
+
+.films-comment {
+  textarea {
+    margin: 0 3.5px 0 0;
+    //width: 845px;
+    //height: 271px;
+  }
+  &__button {
+    float: right;
+  }
+}
+
+.list-group {
+  margin-bottom: 15px;
+}

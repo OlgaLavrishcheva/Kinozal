@@ -76,6 +76,10 @@
     margin-bottom: 30px;
     transition: background-color 0.25s;
   }
+
+  &-item__image {
+    width: 100%;
+  }
 }
 
 .thumbnail {

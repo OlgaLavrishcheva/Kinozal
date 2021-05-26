@@ -1,5 +1,5 @@
-.header-logo__title, .header-logo__description {
-  text-shadow: 0 0 5px darcen #232323 14%, 0 0 20px darcen #232323 14%;
+.header-logo {
+  text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
 .header, .main, .left-sidebar {
@@ -231,8 +231,70 @@ h2::after {
   transition: background-color 0.25s;
 }
 
+.movie-news-item__image {
+  width: 100%;
+}
+
 .thumbnail {
   margin-bottom: 0;
+}
+
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.films-info {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+
+.films-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.films-info__wrapper {
+  margin-right: 15px;
+}
+
+.films-info__wrapper:last-child {
+  margin-right: 0;
+}
+
+.films-info__badge {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.well {
+  border-color: #dddddd;
+  background-color: #f1f1f1;
+}
+
+.films-description,
+.films-reviews,
+.films-comment {
+  position: relative;
+  overflow: hidden;
+}
+
+.films-comment textarea {
+  margin: 0 3.5px 0 0;
+}
+
+.films-comment__button {
+  float: right;
+}
+
+.list-group {
+  margin-bottom: 15px;
 }
 
 .left-sidebar .panel:last-of-type {
@@ -463,6 +525,10 @@ h4 {
   }
 }
 
+@media (max-width: 991.8px) {
+  margin-bottom: 60px;
+}
+
 @media (max-width: 767.8px) {
   .navbar-inverse .navbar-nav > li > a {
     text-align: center;
@@ -497,12 +563,7 @@ h4 {
     font-size: 1.25rem;
   }
   .header-logo__title {
-    letter-spacing: 0.2em;
-    font-size: 2.5rem;
-  }
-  .header-logo__title {
     font-size: 2.5rem;
     letter-spacing: 0.2em;
-    margin-right: -7.5px;
   }
 }

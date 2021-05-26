@@ -21,6 +21,7 @@
 
 .user-login {
   position: relative;
+  @include lg;
 
   &__tabs {
     position: absolute;

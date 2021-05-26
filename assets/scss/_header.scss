@@ -9,12 +9,12 @@
   background-image: url("../img/header-bg.jpg");
   background-position: 50% 50%;
   background-size: cover;
+  @extend %text-shadow;
 
   &__title {
     display: block;
     color: $color-accent;
     font-family: $font-header;
-    @extend %text-shadow;
 
     @include xs-min {
       font-size: 3.5rem;
@@ -24,7 +24,6 @@
     @include xs {
       font-size: 2.5rem;
       letter-spacing: 0.2em;
-      margin-right: -($gap / 2);
     }
   }
 
@@ -33,6 +32,5 @@
     color: $color-light;
     font-size: 1.15rem;
     letter-spacing: 0.2em;
-    @extend %text-shadow;
   }
 }
